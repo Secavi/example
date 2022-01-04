@@ -1,0 +1,157 @@
+.btn {
+	border: none;
+	color: white;
+	padding: 0px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 45%;
+	height:18px;
+	width:18px;
+	margin-left:60px;
+}
+
+#s_open{
+	margin-top: -100px;
+	background: rgba(0,0,0,1);
+}
+
+.selector {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  margin: 1px;
+  border: 2px solid rgba(0,0,0,1);
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: rgba(0,0,0,1);
+  text-indent: 18px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: rgba(255,255,255,0);
+
+  
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.grid-container {
+	position:absolute;
+	width:100%;
+	left:0px;
+	top:0px;
+	bottom:0px;
+	display: grid;
+	grid-template-columns: 200px auto 200px;
+	grid-template-rows: 100px auto 50px;
+	background-color: rgba(255, 255, 255, 1);
+}
+.grid-item {
+	position:relative;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	//padding: 20px;
+	//font-size: 30px;
+	//text-align: center;
+}
+
+#header, #footer{
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+#header { 
+	background-color: rgba(80, 80, 200, 1.0); 
+	text-align: left;
+	font-size: 20px;
+}
+#footer {
+	background-color: rgba(80, 80, 255, 1.0);
+}
+#sidebarR, #sidebarL { 
+	background-color: rgba(200, 200, 255, 1.0); 
+}
+#content { 
+	background-color: rgba(230, 230, 230, 1.0); 
+	position:relative;
+}
+
+{box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+	background-color: #555;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	position: fixed;
+	bottom: 23px;
+	right: 28px;
+	width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+	//display: none;
+	position: fixed;
+	top: 100px;
+	left: 150px;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+	max-width: 300px;
+	padding: 10px;
+	background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom:10px;
+	opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+	background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+	opacity: 1;
+}
